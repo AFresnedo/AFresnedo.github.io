@@ -13,13 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   </head>
+
+  <!-- squeezing page should squeeze and rotate content (see notes) -->
   <body>
+    <!-- start of nav -->
+    <!-- nav will use react to swap components in and out -->
+    <!-- components will be header + section -->
+    <!-- nav will be top page at all times -->
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">Welcome</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="resume.html">Resume</a></li>
+        <!-- TODO make resume open in new link -->
+        <li><a href="_resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -28,13 +35,33 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
+    <!-- TODO make resume open in new link -->
     <li><a href="resume.html">Resume</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 
-    This is my portfolio. Content coming!
+  <!-- end of nav -->
+
+  <!-- start of mobile section / rotating structure -->
+  <div container="class">
+    <!-- headshot goes here -->
+    <!-- some little snippet that changes based on section could go here  -->
+  </div>
+
+  <!-- projects at top to "wow" -->
+  <div container="class">
+    <h2> Projects </h2>
+  </div>
+  <!-- about me to follow projects for personal touch -->
+  <div container="class">
+    <h2> About </h2>
+  </div>
+  <!-- contact is at bottom for "end of reading", linked for accessibility -->
+  <div container="class">
+    <h2> Contact </h2>
+  </div>
 
 
     <!-- scripts -->
