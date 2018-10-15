@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AFresnedo's Portfolio</title>
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- NAVBAR -->
+      <!-- fixed navbar...download resume link? -->
+      <!-- dropdown for navbar projects -->
+      <ul id="projects-dropdown" class="dropdown-content">
+        <li><a href="#projects">Synopsis</a></li>
+        <li class="divider"></li>
+        <li><p>Detailed Pages:</p></li>
+        <li class="divider"></li>
+        <li><a href="#learning-through-problems">Learning Through Problems</a></li>
+        <li class="divider"></li>
+        <li><a href="#man-vs-earth-vs-man">Man-vs-Earth-vs-Man</a></li>
+        <li class="divider"></li>
+        <li><a href="#homept">HomePT</a></li>
+        <li class="divider"></li>
+        <li><a href="#park-owl">Park Owl</a></li>
+      </ul>
+      <!-- navbar main structure -->
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" data-target="navbar-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a class="left dropdown-trigger hide-on-med-and-down" href="#!" data-target="projects-dropdown">Project Pages<i class="right material-icons">arrow_drop_down</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="resume.html" target="_blank">Resume</a></li>
+            <li><a href="#about-me">About Me</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- sidebar for mobile devices -->
+      <ul class="sidenav" id="navbar-mobile">
+        <li><a href="resume.html" target="_blank">Open Resume</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+
+      <!-- about me -->
+      <article id="about-me">
+        About me
+      </article>
+      <!-- projects -->
+      <article id="projects">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Learning Through Problems</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- footer...what position?...contact? -->
+      <!-- javascript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/main.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
