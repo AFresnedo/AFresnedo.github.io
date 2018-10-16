@@ -1,5 +1,5 @@
 //
-// navbar (see materialze for setting options)
+// NOTE navbar (see materialze for setting options)
 //
 
 // sidebar activation, for navbar on mobile
@@ -15,9 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //
-// projects
+// NOTE projects section
 //
+
+// accordian container
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.collapsible');
   var instances = M.Collapsible.init(elems);
 });
+
+//
+// NOTE background
+//
+
+// parallax backdrop
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
