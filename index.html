@@ -14,7 +14,29 @@
 
     <!-- NAVBAR -->
 
-    <!-- fixed navbar...download resume link? -->
+    <!-- navbar main structure -->
+    <div class="navbar-fixed">
+      <nav class="blue-grey darken-4">
+        <div class="nav-wrapper container">
+          <a href="#" data-target="navbar-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a class="left dropdown-trigger hide-on-med-and-down" href="#!" data-target="projects-dropdown">Project Pages<i class="right material-icons">arrow_drop_down</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="resume.html" target="_blank">Resume</a></li>
+            <li><a href="#story">My Story</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- sidebar for mobile devices -->
+    <ul class="sidenav" id="navbar-mobile">
+      <li><a href="#contact-me">Contact Me</a></li>
+      <li><a href="resume.html" target="_blank">Open Resume</a></li>
+      <li><a href="#story">My Story</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
     <!-- dropdown for navbar projects -->
     <ul id="projects-dropdown" class="dropdown-content">
       <li><a href="#projects">Synopsis</a></li>
@@ -29,45 +51,35 @@
       <li class="divider"></li>
       <li><a href="#park-owl">Park Owl</a></li>
     </ul>
-    <!-- navbar main structure -->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper blue-grey darken-4">
-          <a href="#" data-target="navbar-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <a class="left dropdown-trigger hide-on-med-and-down" href="#!" data-target="projects-dropdown">Project Pages<i class="right material-icons">arrow_drop_down</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="resume.html" target="_blank">Resume</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- sidebar for mobile devices -->
-      <ul class="sidenav" id="navbar-mobile">
-        <li><a href="#contact-me">Contact Me</a></li>
-        <li><a href="resume.html" target="_blank">Open Resume</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
+
+    <!-- NAVBAR ENDS -->
 
     <div class="parallax-container">
       <div class="parallax"><img src="imgs/intro.jpg"></div>
     </div>
 
-
     <!-- ABOUT ME STORY -->
 
-    <div class="container">
-      <article id="about-me">
-      </article>
+    <article id="story" class="container">
+      <h2>My Story</h2>
+      <p class="flow-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.
+      </p>
 
-      <!-- ABOUT ME RETROSPECTIVE -->
-      <a class="waves-effect waves-light btn modal-trigger"
-         href="#about-me-insights">Insights Gleaned</a>
+      <!-- HISTORY RETROSPECTIVE -->
+      <!-- insights button -->
+      <a class="waves-effect waves-light btn modal-trigger blue-grey darken-4
+      blue-grey-text lighten-4-text"
+         href="#story-insights">Insights Gleaned</a>
 
-      <!-- Modal Structure -->
-      <div id="about-me-insights" class="modal bottom-sheet">
+      <!-- insights content-->
+      <div id="story-insights" class="modal bottom-sheet">
         <div class="modal-content blue-grey darken-4">
           <h4>My story has taught me...</h4>
           <p>Insights on story</p>
@@ -77,99 +89,75 @@
           btn-flat blue-grey-text lighten-4-text">Dismiss</a>
         </div>
       </div>
-    </div>
-
-
+      </div>
+    </article>
 
     <div class="parallax-container">
-      <div class="parallax"><img src="imgs/4_parallax.png"></div>
+      <div class="parallax"><img src="imgs/intro.jpg"></div>
     </div>
 
     <!-- PROJECTS SECTION -->
-    <div class="container">
+    <article id="projects">
+      <section class="container">
+        <h3>Math Affirm</h3>
+        <p class="flow-text">
+        Learning through problems is a template full stack app. It was
+        originally created to fulfill the needs of a project I worked on
+        called Math Affirm.
 
-      <article id="projects">
-        <h2>Projects</h2>
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header blue-grey darken-4">Learning Through Problems</div>
-            <div class="collapsible-body">
-              <p class="flow-text">
-              Learning through problems is a template full stack app. It was
-              originally created to fulfill the needs of a project I worked on
-              called Math Affirm.
+        -client not technical but needs to be able to create content
+        -agile methodologies
+        -2 months
+        -rewriting/refactoring into django
+        -offline input pipeline built with python scripts
+        -datadriven
+        -communication experience because client in Texas, not in
+        person
+        -MathAffirm cannot be shown but some screenshots is okay?
+        -deploy Learning Through Problems with fake data?
+        </p>
+        <!-- insights button -->
+        <a class="waves-effect waves-light btn modal-trigger blue-grey darken-4 blue-grey-text lighten-4-text"
+           href="#mathaffirm-insights">Insights Gleaned</a>
 
-              -client not technical but needs to be able to create content
-              -agile methodologies
-              -2 months
-              -rewriting/refactoring into django
-              -offline input pipeline built with python scripts
-              -datadriven
-              -communication experience because client in Texas, not in
-              person
-              -MathAffirm cannot be shown but some screenshots is okay?
-              -deploy Learning Through Problems with fake data?
-              </p>
-              <!-- Modal Trigger -->
-              <a class="waves-effect waves-light btn modal-trigger"
-                 href="#modal1">Insights Gleaned</a>
+        <!-- insights content -->
+        <div id="mathaffirm-insights" class="modal bottom-sheet">
+          <div class="modal-content blue-grey darken-4">
+            <h4>Working on this project, I learned...</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer blue-grey darken-4">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat blue-grey-text lighten-4-text">Dismiss</a>
+          </div>
+        </div>
+      </section>
 
-              <!-- Modal Structure -->
-              <div id="modal1" class="modal bottom-sheet">
-                <div class="modal-content">
-                  <h4>Working on this project, I learned...</h4>
-                  <p>A bunch of text</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey darken-4">Park Owl</div>
-            <div class="collapsible-body">
-              <p>
-              -hackathon winner
-              -2 UX designers
-              -a day spent designing collaboratly then another day working with
-              my fellow developer to get as far as possible towards UX specs
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey darken-4">HomePT</div>
-            <div class="collapsible-body">
-              <p>
-              -real client
-              -decoupled, created api for another developer
-              -err msgs
-              -testing
-              -revised as developing alongside
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey darken-4">Man-vs-Earth-vs-Man</div>
-            <div class="collapsible-body">
-              <p>
-              -features implemented
-              -good use of phaser, how?
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey darken-4">Personal Games Tracker</div>
-            <div class="collapsible-body">
-              <p>
-              -recommendations, what intelligence is here?
-              -easy of use is a priority, how was this achieved?
-              </p>
-            </div>
-          </li>
-        </ul>
-      </article>
-    </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="imgs/mathaffirm_1.jpg"></div>
+      </div>
+
+      <p>
+      -hackathon winner
+      -2 UX designers
+      -a day spent designing collaboratly then another day working with
+      my fellow developer to get as far as possible towards UX specs
+      </p>
+      <p>
+      -real client
+      -decoupled, created api for another developer
+      -err msgs
+      -testing
+      -revised as developing alongside
+      </p>
+      <p>
+      -features implemented
+      -good use of phaser, how?
+      </p>
+      <p>
+      -recommendations, what intelligence is here?
+      -easy of use is a priority, how was this achieved?
+      </p>
+    </article>
 
     <div class="parallax-container">
       <div class="parallax"><img src="imgs/5_parallax.png"></div>
