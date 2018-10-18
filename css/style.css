@@ -1,4 +1,7 @@
-.parallax-container {
-  height: 200px;
+.parallax-large {
+  height: 250px;
 }
 
+.parallax-skinny {
+  height: 50px;
+}
