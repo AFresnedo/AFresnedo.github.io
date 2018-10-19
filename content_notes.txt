@@ -10,14 +10,6 @@ ltp:
         person
         -MathAffirm cannot be shown but some screenshots is okay?
         -deploy Learning Through Problems with fake data?
-
-park owl:
-        -hackathon winner
-        -2 UX designers
-        -a day spent designing collaboratly then another day working with
-        my fellow developer to get as far as possible towards UX specs
-
-
 home pt:
         <!-- -real client -->
         <!-- -decoupled, created api for another developer -->
