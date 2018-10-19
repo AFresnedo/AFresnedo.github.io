@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   var instances = M.Modal.init(elems, options);
 });
+// card image expansions
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems);
+});
 
 //
 // NOTE background
