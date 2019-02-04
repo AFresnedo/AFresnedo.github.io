@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Andres' Portfolio</title>
+    <title>Andres' Knowledge and Interests</title>
     <!-- materialize icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- materialize cdn -->
@@ -19,11 +19,9 @@
       <nav class="blue-grey darken-4">
         <div class="nav-wrapper container">
           <a href="#" data-target="navbar-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <a class="left dropdown-trigger hide-on-med-and-down" href="#!" data-target="projects-dropdown">Projects<i class="right material-icons">arrow_drop_down</i></a>
+          <a class="left dropdown-trigger hide-on-med-and-down" href="#!" data-target="topics">Topics<i class="right material-icons">arrow_drop_down</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="learning.html" target="_blank">Knowledge & Interests</a></li>
             <li><a href="resume.html" target="_blank">Resume</a></li>
-            <li><a href="#about-me">About Me</a></li>
             <li><a href="#contact-me">Contact Me</a></li>
             <li><a href="https://github.com/AFresnedo" target="_blank">My Github</a></li>
           </ul>
@@ -35,27 +33,67 @@
     <ul class="sidenav" id="navbar-mobile">
       <div class="divider"></div>
       <p class="center-align">Open my...</p>
-      <li><a href="learning.html">Knowledge & Interests Page</a></li>
+      <li><a href="index.html">Main Page</a></li>
       <li><a href="resume.html" target="_blank">Resume</a></li>
       <li><a href="https://github.com/AFresnedo" target="_blank">Github</a></li>
       <div class="divider"></div>
       <p class="center-align">Scroll to section...</p>
-      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#about-me">Foreword</a></li>
+      <li><a href="#about-me">Topics</a></li>
       <li><a href="#contact-me">Contact Me</a></li>
       <div class="divider"></div>
-      <p class="center-align">Jump to project...</p>
-      <li><a href="#math-affirm">Math Affirm</a></li>
-      <li><a href="#man-vs-earth-vs-man">Man-vs-Earth-vs-Man</a></li>
-      <li><a href="#homept">HomePT</a></li>
-      <li><a href="#park-owl">Park Owl</a></li>
+      <p class="center-align">Jump to topic...</p>
+      <li><a href="#structures">Data Structures</a></li>
+      <li><a href="#algorithms">Algorithms</a></li>
+      <li><a href="#data">Data Storage and Usage</a></li>
+      <li><a href="#design">Software Design</a></li>
+      <li><a href="#technologies">Frameworks, Libraries, Technologies</a></li>
+      <li><a href="#languages">Programming Languages</a></li>
+      <li><a href="#communication">Communication</a></li>
+      <li><a href="#environments">Development Environments</a></li>
+      <li><a href="#resources">Resources</a></li>
     </ul>
 
-    <!-- dropdown for navbar projects -->
+    <!-- dropdown for navbar topics -->
     <ul id="projects-dropdown" class="dropdown-content blue-grey darken-4">
-      <li><a href="#math-affirm">Math Affirm</a></li>
-      <li><a href="#man-vs-earth-vs-man">Man-vs-Earth-vs-Man</a></li>
-      <li><a href="#homept">HomePT</a></li>
-      <li><a href="#park-owl">Park Owl</a></li>
+      <li><a href="#structures">Data Structures</a></li>
+      <!-- attributes, common usages, personal opinions, pros/cons -->
+      <li><a href="#algorithms">Algorithms</a></li>
+      <!-- sorting, searching, interview practice standouts -->
+      <li><a href="#data">Data Storage and Usage</a></li>
+      <!-- sql, nosql, relational (normalization), mongodb -->
+      <li><a href="#design">Software Design</a></li>
+      <!-- design patterns book patterns, mvc, others? -->
+      <li><a href="#technologies">Frameworks, Libraries, Technologies</a></li>
+      <!-- express, django, ruby on rails, restify, flask? -->
+      <!-- bootstrap, materialize -->
+      <!-- react -->
+      <!-- phaser? -->
+      <!-- microsoft bot -->
+      <!-- docker -->
+      <li><a href="#languages">Programming Languages</a></li>
+      <!-- dyanmic: python, javascript, ruby -->
+      <!-- static: java, c#, cpp -->
+      <li><a href="#communication">Communication</a></li>
+      <!-- jon's demo, working with other engineers -->
+      <!-- interactions with razvan, client -->
+      <li><a href="#environments">Development Environments</a></li>
+      <!-- linux -->
+      <!-- bash -->
+      <!-- eclipse -->
+      <!-- vim, vim plugins -->
+      <!-- visual studio -->
+      <!-- azure -->
+      <li><a href="#resources">Resources</a></li>
+      <!-- github, bitbucket -->
+      <!-- medium, new topics & language feature updates -->
+      <!-- stackoverflow, answers to common questions (important for communication) -->
+      <!-- codewars, best practices and languages -->
+      <!-- geeksforgeeks, computer science fudementals -->
+      <!-- leetcode, hackerank: interview practice -->
+      <!-- cracking the coding interview: interview insight -->
+      <!-- design patterns, software design -->
+      <!-- algorithm design, algorithms -->
     </ul>
 
     <!-- NAVBAR ENDS -->
@@ -64,107 +102,16 @@
       <div class="parallax"><img src="imgs/intro.jpg"></div>
     </div>
 
-    <!-- SUMMARY OF ME SECTION -->
-    <article id="about-me" class="container">
-      <h2 class="center-align blue-grey-text text-lighten-3">About Me</h2>
+    <!-- ABOUT THE PAGE SECTION -->
+    <article id="about" class="container">
+      <h2 class="center-align blue-grey-text text-lighten-3">What is this page?</h2>
       <p class="flow-text">
-      My name is Andres Fresnedo and I am a full stack web developer. My work
-      benefits from my object-oriented design and focus on good coding
-      practices. Creating software solutions with an emphasis on maintainable
-      controllers, efficient models, and well structured databases gives me the
-      greatest satisfaction. I am looking to delve deep in a full
-      stack, or back-end, development role to augment my experience as
-      a developer (and myself as person).
+      I built this page because I wanted to have a place to jot down my values,
+      opinions, musings, and takeaways from my experience as a developer. My
+      hope is that this page is indicitive of what talking to me about these
+      topics is like. It should also serve as a quick review of what I know (or
+      at least have been exposed to).
       </p>
-
-      <!-- ABOUT ME STORY -->
-      <ul id="story" class="collapsible popout">
-        <li>
-          <!-- <div class="collapsible-header teal darken-3 blue-grey-text text-lighten-4"> -->
-          <div class="collapsible-header clickable">
-            <span class="flow-text">My story as a developer...</span>
-          </div>
-          <div class="collapsible-body">
-
-            <section class="container">
-              <p class="flow-text">
-              Began as a curiosity in community
-              college.  At that time, I decided to find out if my ideas about
-              coding were more than just fantasies. They were. I took two
-              introductory courses to learn Java and instantly fell in love
-              with software development.
-              </p>
-
-              <p class="flow-text">
-              After moving onto the University of Washington, I incorrectly felt
-              that I was penned into doing a major in applied mathematics.
-              Despite finishing my general education requirements, and taking
-              advantage of the opportunity to complete CS classes (algorithm
-              design, data structures, and databases), I did not complete my math
-              degree. For me, Mathematics did not appear to be a lifelong pursuit.
-              </p>
-
-              <p class="flow-text">
-              Luckily, as an aspiring web developer, I found a project to sink my
-              teeth into. For 2 months, I worked on a project called Math Affirm.
-              The site was built using Ruby on Rails and, as the sole developer,
-              I was able to gain first hand experience in creating a full stack
-              application.
-              </p>
-
-              <p class="flow-text">
-              Following such a positive experience, I immediately set out to
-              begin a career as a web developer. However, I was not adequately
-              prepared. A few frustrating months of job searching later,
-              I received life changing advice from a friend. Her husband had
-              recently made a career shift into web development and had used
-              a boot camp as a launching point.
-              </p>
-
-              <p class="flow-text">
-              The boot camp was a Web Development Immersive course offered by
-              General Assembly in Seattle. GA was an overwhelmingly awesome
-              experience.  For the first time in my life, I was surrounded by
-              people interested in the same work as me. I became proficient in
-              JavaScript and learned to use both JavaScript and Python as back
-              end development languages. As an added bonus, I also found joy in
-              front end development (when aided by clever and powerful libraries,
-              such as React).
-              </p>
-
-              <!-- HISTORY RETROSPECTIVE -->
-              <!-- insights button -->
-              <div class="center-align">
-                <a class="waves-effect waves-light btn modal-trigger blue-grey darken-4
-                blue-grey-text text-lighten-1"
-                   href="#story-insights">Insights Gleaned</a>
-              </div>
-
-              <!-- insights content-->
-              <div id="story-insights" class="modal bottom-sheet">
-                <div class="modal-content blue-grey darken-4">
-                  <h4>My story has taught me...</h4>
-                  <p class="flow-text">
-                  Most importantly, that good work and good people can make all
-                  the difference in the world. Good work gives you the ability to
-                  work harder and longer, without burnout. Having good people
-                  around you keeps you motivated, where otherwise you would
-                  falter. Working with a diverse, but interested, band of people
-                  results in your work profiting from multiple perspectives and
-                  these can often be instrumental in avoiding blockers.
-                  </p>
-                </div>
-                <div class="modal-footer blue-grey darken-4">
-                  <a href="#!" class="modal-close waves-effect waves-green
-                  btn-flat blue-grey-text text-lighten-1">Dismiss</a>
-                </div>
-              </div>
-            </section>
-
-          </div>
-        </li>
-      </ul>
-
     </article>
 
     <div class="parallax-container parallax-large">
@@ -172,8 +119,8 @@
     </div>
 
     <!-- PROJECTS SECTION -->
-    <article id="projects">
-      <h2 class="center-align blue-grey-text text-lighten-3">Projects</h2>
+    <article id="topics">
+      <h2 class="center-align blue-grey-text text-lighten-3">Topics</h2>
 
       <div class="parallax-container parallax-skinny">
         <div class="parallax"><img src="imgs/mathaffirm_1.jpg"></div>
